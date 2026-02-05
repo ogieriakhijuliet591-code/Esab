@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Queen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="love-card">
+        <h1>To My Beautiful Babe ❤️</h1>
+        <p>You are the best thing that happened to me in 5 months.</p>
+        
+        <button onclick="showLove()" class="heart-btn">Tap for a Surprise</button>
+        
+        <div id="secret-message" class="hidden">
+<div class="music-section">
+    <h3>Press play for your favorite song 🎶</h3>
+    <audio id="loveSong" src="bts_song.mp3"></audio>
+    <div class="controls">
+        <button onclick="playMusic()" class="play-btn">▶️ Play</button>
+        <button onclick="pauseMusic()" class="play-btn">⏸️ Pause</button>
+    </div>
+</div>
+
+            <p class="romantic-text">I love you so much, Esab forever! ❤️💍</p>
+
+<h3>Our Memories & Your Favorites</h3>
+<div class="gallery">
+    <img src="us.jpg" alt="Us" style="width:100%; border-radius:15px;">
+    <img src="bts.jpg" alt="BTS" style="width:100%; border-radius:15px;">
+</div>
+
+            <div class="gallery">
+                <img src="us.jpg" alt="Us" style="width:100%; border-radius:15px;">
+<img src="bts.jpg" alt="BTS" style="width:100%; border-radius:15px;">
+
+    </div>
+
+    <script>
+        function showLove() {
+            document.getElementById('secret-message').classList.toggle('hidden');
+            alert("You are my everything! ❤️");
+        }
+    </script>
+let song = document.getElementById("loveSong");
+
+function playMusic() {
+    song.play();
+}
+
+function pauseMusic() {
+    song.pause();
+}
+
+</body>
+</html>
